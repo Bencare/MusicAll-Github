@@ -1,0 +1,33 @@
+<h2>Liste des albums de la catégorie : <?php $cat ?></h2>
+<table >
+<?php
+foreach($records as $record)
+	{
+	echo "<tr>";
+	echo "<td><a href='?section=fichealbum&id=" . $record["ID"] . "'>" . $record["Titre"] ."</a></td>";
+	echo "<td>". $record["cote"] ."</td>";
+	echo "</tr>";
+
+	}
+?>
+</table><br />
+
+<form method="GET" action="?">
+	<input type='hidden' name='section' value='list_album'/>
+	Rechercher :<input type="text" name="motcle"><input type="submit" name="submotcle" value="Rechercher"></form>
+
+	<?php if($section == "list_alb"){
+	
+	echo "<form action=\"?\" method=\"GET\">
+	<input type='hidden' name='section' value='list_categories'/>
+	<input type=\"submit\" value=\"Retour aux catégories\" >
+</form>";
+}
+
+?>
+
+	<a href="?section=form_artist">Ajouter un album</a>
+
+
+<form action="?" method="get"> 
+    <input type="submit" value="Annuler" name="section"></form>

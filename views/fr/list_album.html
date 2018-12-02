@@ -1,0 +1,50 @@
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Liste des albums</div>
+  <!--<div class="panel-body">
+    <p></p>
+  </div>-->
+
+
+<table class="table">
+<?php
+foreach($records as $record)
+	{
+	echo "<tr>";
+	echo "<td><a href='?section=fichealbum&id=" . $record["ID"] . "'>" . $record["Titre"] ."</a></td>";
+	echo "<td>". $record["Anneeparution"] ."</td>";
+	//echo "<td>". $record["description"] . "</td>";
+
+	if(isset($_SESSION["access"])  && $_SESSION["access"] == "ok" && $_SESSION["grade"] < 3)
+   { 
+	echo "<td><a href='?section2=effaceralbum&section=list_album&id=" . $record["ID"] . "'>effacer</td>";
+	 }
+
+	echo "</tr>";
+
+	}
+?>
+</table> <br />
+</div>
+<form method="GET" action="?">
+	<input type='hidden' name='section' value='list_album'/>
+	Rechercher :<input type="text" name="motcle"><input type="submit" name="submotcle" value="Rechercher"></form>
+
+	<?php if(isset($_GET["submotcle"])){
+	
+	echo "<form action=\"?\" method=\"GET\">
+	<input type='hidden' name='section' value='list_album'/>
+	<input type=\"submit\" value=\"Retour à la liste des albums\" >
+</form>";
+}
+
+?>
+
+	<a href="?section=form_album">Ajouter un album</a>
+
+
+
+<form action="?" method="get"> 
+    <input type="submit" value="Annuler" name="section">
+	
+    </form>

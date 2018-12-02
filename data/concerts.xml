@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<concerts>
+  <concert id="1">
+    <nom lang="fr">Graspop festival</nom> 
+    <name lang="fr">Graspop_festival</name>
+    <artiste lang="fr">Tout plein</artiste> 
+    <date lang="fr">10/01/2019</date>
+    <lieu lang="fr">là-bas</lieu>
+    <note lang="fr">metal/10</note>
+    <id lang="fr">1</id>
+    <nom lang="en">Graspop festival</nom> 
+    <name lang="en">Graspop_festival</name>
+    <artiste lang="en">Lots</artiste> 
+    <date lang="en">10/01/2019</date>
+    <lieu lang="en">Over there</lieu>
+    <note lang="en">metal/10</note>
+    <id lang="en">1</id>
+  </concert>
+
+  <concert id="2">
+    
+    <nom lang="fr">Dour festival</nom> 
+    <name lang="fr">Dour_festival</name>  
+    <artiste lang="fr">Beaucoup</artiste> 
+    <date lang="fr">02/06/2019</date>
+    <lieu lang="fr">Dour</lieu>
+    <note lang="fr">ok/10</note>
+    <id lang="fr">2</id>
+    <nom lang="en">Dour festival</nom> 
+    <name lang="en">Dour_festival</name>  
+    <artiste lang="en">Tons</artiste> 
+    <date lang="en">02/06/2019</date>
+    <lieu lang="en">Dour</lieu>
+    <note lang="en">ok/10</note>
+    <id lang="en">2</id>
+
+  </concert>
+
+  <concert id="3">
+    <nom lang="fr">Festival de la musique</nom> 
+    <name lang="fr">Festival_de_la_musique</name> 
+    <artiste lang="fr">Un paquet</artiste> 
+    <date lang="fr">03/04/2019</date>
+    <lieu lang="fr">Bruxelles</lieu>
+    <note lang="fr">Musique/10</note>
+    <id lang="fr">3</id>
+    <nom lang="en">Music festival</nom> 
+    <name lang="en">Music_Festival</name> 
+    <artiste lang="en">A lot </artiste> 
+    <date lang="en">03/04/2019</date>
+    <lieu lang="en">Brussels</lieu>
+    <note lang="en">Music/10</note>
+    <id lang="en">3</id>
+
+  </concert>
+
+  <concert id="4">
+    <nom lang="fr">Le roi du silence</nom> 
+    <name lang="fr">Le_roi_du_silence</name> 
+    <artiste lang="fr">Le roi</artiste> 
+    <date lang="fr">06/06/2026</date>
+    <lieu lang="fr">Châteauneuf</lieu>
+    
+    <note lang="fr">chut/10</note>
+    <id lang="fr">4</id>
+    <nom lang="en">Silence King</nom> 
+    <name lang="en">Silence_King</name> 
+    <artiste lang="en">The king</artiste> 
+    <date lang="en">06/06/2026</date>
+    <lieu lang="en">Newcastle</lieu>
+    <note lang="en">silence/10</note>
+    <id lang="en">4</id>
+
+  </concert>
+
+  <concert id="5">
+    <nom lang="fr">J'ai plus d'idée</nom> 
+    <name lang="fr">Jai_plus_didee</name> 
+    <artiste lang="fr">personne</artiste> 
+    <date lang="fr">sans doute jamais</date>
+    <lieu lang="fr">nulle part</lieu>
+    <note lang="fr">idiot/10</note>
+    <id lang="fr">5</id>
+    <nom lang="en">I don't have any more ideas</nom> 
+    <name lang="en">no_more_ideas</name> 
+    <artiste lang="en">Nobody</artiste> 
+    <date lang="en">Probably never</date>
+    <lieu lang="en">Nowhere</lieu>
+    <note lang="en">dumb/10</note>
+    <id lang="en">5</id>
+
+  </concert>
+
+  
+</concerts>
+

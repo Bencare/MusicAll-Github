@@ -1,0 +1,30 @@
+<h2>List of categories</h2>
+<table>
+<?php
+foreach($records as $record)
+	{
+	echo "<tr>";
+	echo "<td><a href='?section=fichecategorie&id=" . $record["ID"] . "'>" . $record["categorie"] ."</a></td>";
+	echo "</tr>";
+
+	}
+?>
+</table> <br />
+
+<form method="GET" action="?">
+	<input type='hidden' name='section' value='list_categories'/>
+	Search :<input type="text" name="motcle"><input type="submit" name="submotcle" value="Search"></form>
+	
+<?php if(isset($_GET["submotcle"])){
+	
+	echo "<form action=\"?\" method=\"GET\">
+	<input type='hidden' name='section' value='list_categories'/>
+	<input type=\"submit\" value=\"Back to the list of categories\" >
+</form>";
+}
+
+?>
+<form action="?" method="get"> 
+
+    <input type="submit" value="Cancel" name="section">
+</form>

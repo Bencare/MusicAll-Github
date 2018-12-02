@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<messages>
+	<message id="welcome" lang="fr" title="Bienvenue">Bienvenue </message>
+	<message id="welcome" lang="en" title="Welcome">Welcome </message>
+	<message id="errorduplicate" lang="fr" title="Erreur de double encodage">
+	vous avez déjà rempli le formulaire pour ce concert.
+	</message>
+	<message id="errorduplicate" lang="en" title="Double encoding error">
+	You have already filled this form with this mail adress.
+	</message>
+
+</messages>
+

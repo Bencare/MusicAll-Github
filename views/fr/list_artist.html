@@ -1,0 +1,43 @@
+<h2>Liste des artistes</h2>
+<table >
+<?php
+foreach($records as $record)
+	{
+	echo "<tr>";
+	echo "<td><a href='?section=ficheartiste&id=" . $record["ID"] . "'>" . $record["Surnom"] ."</a></td>";
+	echo "<td>". $record["Prenom"] ."</td>";
+	echo "<td>". $record["Nom"] ."</td>";
+
+
+
+	if(isset($_SESSION["access"])  && $_SESSION["access"] == "ok" && $_SESSION["grade"] < 3)
+   { 
+	echo "<td><a href='?section2=effacerartiste&section=list_artist&id=" . $record["ID"] . "'>effacer</a></td>"; }
+
+	echo "</tr>";
+
+	}
+?>
+</table><br />
+
+<form method="GET" action="?">
+	<input type='hidden' name='section' value='list_artist'/>
+	Rechercher :<input type="text" name="motcle"><input type="submit" name="submotcle" value="Rechercher"></form>
+
+	<?php if(isset($_GET["submotcle"])){
+	
+	echo "<form action=\"?\" method=\"GET\">
+	<input type='hidden' name='section' value='list_artist'/>
+	<input type=\"submit\" value=\"Retour à la liste des artistes\" >
+</form>";
+}
+
+?>
+
+	<a href="?section=form_artist">Ajouter un artiste</a>
+
+
+<form action="?" method="get"> 
+    <input type="submit" value="Annuler" name="section">
+
+ </form>
